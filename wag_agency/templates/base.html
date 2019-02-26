@@ -21,8 +21,13 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/wag_agency.css' %}">
 
         {% block extra_css %}
-            {# Override this in templates to add extra stylesheets #}
+            <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+            <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+            <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
+            <script type="text/javascript" src="{ static 'js/pace.min.js' %}"></script>
         {% endblock %}
+
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -34,7 +39,9 @@
         <script type="text/javascript" src="{% static 'js/wag_agency.js' %}"></script>
 
         {% block extra_js %}
-            {# Override this in templates to add extra javascript #}
+            <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
         {% endblock %}
     </body>
 </html>
