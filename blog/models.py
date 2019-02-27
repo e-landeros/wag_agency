@@ -21,6 +21,20 @@ class BlogIndexPage(Page):
         context['blogpages'] = blogpages
         return context
 
+    def serve(self, request):
+        # Get blogs
+        blogs = self.blogs
+
+        # Filter by tag
+        tag = request.GET.get('tag')
+        if tag:
+            blogs = blogs.filter(tags__name=tag)
+
+        return render(request, self.template, {
+            'page': page,
+            'blogs': blogs,
+        })    
+
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]

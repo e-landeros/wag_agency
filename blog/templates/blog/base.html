@@ -19,6 +19,16 @@
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/wag_agency.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     
         {% block extra_css %}
             {# Problems with global css #}           
@@ -33,6 +43,23 @@
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/wag_agency.js' %}"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/popper.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/stellar.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/mail-script.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/theme.js' %}"></script>
         {% block extra_js %}
             {# Problems with global js #}            
         {% endblock %}
